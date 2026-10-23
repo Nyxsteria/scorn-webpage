@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="SCORN is a Python-coded dark-fantasy text adventure set in a plague-ravaged world."
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>SCORN - An Interactive Adventure Game</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="#home" class="logo-container" aria-label="SCORN home">
+            <img src="images/site-icon.png" alt="SCORN logo">
+        </a>
+
+        <nav class="icon-tray" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#world">World</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#bestiary">Bestiary</a></li>
+                <li><a href="#play">Play</a></li>
+            </ul>
+        </nav>
+
+        <a href="#play" class="download-btn">
+            Download
+            <span aria-hidden="true">↓</span>
+        </a>
+
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div id="about" class="hero-content">
+
+                <p class="hero-eyebrow">
+                    A Python-Coded Dark-Fantasy Text Adventure
+                </p>
+
+                <h1>
+                    The Book Has
+                    <span>Chosen You</span>
+                </h1>
+
+                <p class="hero-description">
+                    Awaken in a plague-ravaged world, uncover the secrets
+                    of a cursed grimoire, confront primordial creatures,
+                    and determine whether your destiny can be escaped.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#play" class="primary-btn">
+                        Begin Your Journey
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="#world" class="secondary-btn">
+                        Explore the Lore
+                    </a>
+
+                </div>
+
+                <p class="hero-keywords">
+                    Explore
+                    <span aria-hidden="true">/</span>
+                    Uncover
+                    <span aria-hidden="true">/</span>
+                    Survive
+                </p>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="book.png"
+                    alt="The cursed SCORN grimoire in a dark fantasy landscape"
+                >
+            </div>
+
+            <aside class="hero-quote">
+                <p>
+                    Some stories<br>
+                    should<br>
+                    stay buried
+                </p>
+
+                <span
+                    class="decorative-line"
+                    aria-hidden="true"
+                ></span>
+            </aside>
+
+        </section>
+
+        <section id="features" class="features-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Game <span>Features</span>
+                </h2>
+
+                <div
+                    class="heading-line"
+                    aria-hidden="true"
+                ></div>
+
+                <p class="section-quote">
+                    “Knowledge always comes at a cost.”
+                </p>
+
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <img
+                        src="compass.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Choice-Based Exploration</h3>
+
+                    <p>
+                        Forge your path through crypts, cemeteries,
+                        forests and scorched fields. Every choice brings
+                        you closer to the truth.
+                    </p>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <img
+                        src="grimoire.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>A Cursed Destiny</h3>
+
+                    <p>
+                        Discover the grimoire known as SCORN and uncover
+                        the dark truth behind its call.
+                    </p>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <img
+                        src="skull.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Dark-Fantasy Creatures</h3>
+
+                    <p>
+                        Encounter hostile entities such as soulwraiths
+                        and the Hexenbeast. Learn their weaknesses,
+                        adapt and survive.
+                    </p>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <img
+                        src="bag.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Items and Knowledge</h3>
+
+                    <p>
+                        Collect equipment, expand your inventory and
+                        uncover knowledge that may be key to your survival.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <div class="world-bestiary-layout">
+
+            <section id="world" class="world-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        The <span>World</span>
+                    </h2>
+
+                    <div
+                        class="heading-line"
+                        aria-hidden="true"
+                    ></div>
+
+                    <p class="section-label">
+                        A Land Ravaged by Plague
+                    </p>
+
+                </div>
+
+                <div class="world-grid">
+
+                    <article class="world-card">
+
+                        <img
+                            src="crypt.png"
+                            alt="The dark stone interior of the crypt"
+                        >
+
+                        <div class="world-card-content">
+                            <h3>The Crypt</h3>
+                            <p>Where it all begins.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="world-card">
+
+                        <img
+                            src="cemetery.png"
+                            alt="A cemetery surrounded by dark woodland"
+                        >
+
+                        <div class="world-card-content">
+                            <h3>The Cemetery</h3>
+                            <p>Restless souls remain.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="world-card">
+
+                        <img
+                            src="moonlit-forest.png"
+                            alt="A dark forest illuminated by moonlight"
+                        >
+
+                        <div class="world-card-content">
+                            <h3>The Moonlit Forest</h3>
+                            <p>Shadows hide more than trees.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="world-card">
+
+                        <img
+                                      <p>Once fertile, now forgotten.</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section id="bestiary" class="bestiary-section">
+
+                <div class="section-heading bestiary-heading">
+
+                    <h2>Bestiary</h2>
+
+                    <div
+                        class="heading-line"
+                        aria-hidden="true"
+                    ></div>
+
+                    #hexenbeast
+                        View All
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+                <article id="hexenbeast" class="bestiary-entry">
+
+                    <div class="bestiary-content">
+
+                        <p class="entry-number">
+                            Knowledge Entry 001
+                        </p>
+
+                        <h3>Hexenbeast</h3>
+
+                        <p>
+                            A primordial animal prioritising territory
+                            over survival; an agile and versatile
+                            adversary vulnerable to heavy attacks.
+                        </p>
+
+                        #hexenbeast
+                            View Entry
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                    <div class="bestiary-image">
+
+                        <img
+                            src="hexenbeast.png"
+                            alt="The Hexenbeast, a hostile creature from the world of SCORN"
+                        >
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </div>
+
+        <section id="story" class="story-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    The <span>Story</span>
+                </h2>
+
+                <div
+                    class="heading-line"
+                    aria-hidden="true"
+                ></div>
+
+            </div>
+
+            <div class="story-layout">
+
+                <div class="timeline">
+
+                    <article class="timeline-step active">
+
+                        <span class="timeline-number">01</span>
+
+                        <div
+                            class="timeline-marker"
+                            aria-hidden="true"
+                        ></div>
+
+                        <div class="timeline-content">
+
+                            <h3>The Awakening</h3>
+
+                            <p>
+                                Your path into the darkness begins here.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="timeline-step">
+
+                        <span class="timeline-number">02</span>
+
+                        <div
+                            class="timeline-marker"
+                            aria-hidden="true"
+                        ></div>
+
+                        <div class="timeline-content">
+
+                            <h3>The Harrowfields</h3>
+
+                            <p>
+                                A new path, burdened by a curse.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="timeline-step locked">
+
+                        <span class="timeline-number">03</span>
+
+                        <div
+                            class="timeline-marker"
+                            aria-hidden="true"
+                        ></div>
+
+                        <div class="timeline-content">
+
+                            <h3>???</h3>
+
+                            <p>
+                                More lies ahead...
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <aside class="story-quote">
+
+                    <blockquote>
+                        <p>
+                            “We are all damned.<br>
+                            You bear our omen: our SCORN.”
+                        </p>
+                    </blockquote>
+
+                    <span
+                        class="quote-line"
+                        aria-hidden="true"
+                    ></span>
+
+                    <!--
+                        Remove this image element if you do not yet
+                        have damned-figure.png in your project folder.
+                    -->
+                    damned-figure.png
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <section id="play" class="play-section">
+
+            <div class="play-content">
+
+                <p class="section-label">
+                    The Grimoire Is Waiting
+                </p>
+
+                <h2>Begin Your Journey</h2>
+
+                <p>
+                    Enter the plague-ravaged world of SCORN and determine
+                    whether the curse can be escaped.
+                </p>
+
+                <!--
+                    Change the href to your ZIP file when the game
+                    is ready to download. For example:
+
+                    href="downloads/scorn-game.zip"
+                    download
+                -->
+                #home
+                    SCORN Coming Soon
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-left">
+
+            #home
+                images/site-icon.png
+            </a>
+
+            <p>A Python Text-Based Adventure</p>
+
+        </div>
+
+        <nav
+            class="footer-links"
+            aria-label="Footer navigation"
+        >
+
+            #features
+                Development
+            </a>
+
+            <!-- Replace # with your GitHub project URL -->
+            #
+                GitHub
+            </a>
+
+            <!-- Replace # with a contact page or email address -->
+            #
+                Contact
+            </a>
+
+        </nav>
+
+        <div
+            class="socials"
+            aria-label="Social media links"
+        >
+
+            <!-- Replace # with your GitHub project URL -->
+            #
+                <img
+                    src="github.svg"
+                    alt="GitHub logo"
+                    aria-hidden="true"
+                >
+            </a>
+
+            <!-- Replace # with your YouTube URL -->
+            #
+                <img
+                    src="youtube.svg"
+                    alt="Youtube logo"
+                    aria-hidden="true"
+                >
+            </a>
+
+            <!-- Replace # with your Discord invitation URL -->
+            #
+                <img
+                    src="discord.svg"
+                    alt="Discord logo"
+                    aria-hidden="true"
+                >
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 SCORN. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

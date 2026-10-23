@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+:root {
+    --background: #070908;
+    --background-soft: #0c0f0d;
+    --background-card: #0a0d0b;
+    --text-primary: #efefea;
+    --text-secondary: #b8b8b3;
+    --text-muted: #777b76;
+    --accent: #82ff1f;
+    --accent-dark: #55b810;
+    --border: #3b403c;
+    --border-light: #515651;
+    --header-height: 52px;
+    --page-padding: clamp(24px, 5.3vw, 82px);
+    --serif: 'Cinzel', Georgia, serif;
+    --sans-serif: "Inter", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behaviour: smooth;
+    background-color: var(--background);
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    color: var(--text-primary);
+    background:
+            radial-gradient(
+                circle at 50% 0%,
+                rgba(53,74, 60, 0.12),
+                transparent 35%
+            ),
+            linear-gradient(
+                90deg,
+                rgba(255,255,255,0.018) 1px,
+                transparent 1px
+            ),
+            var(--background);
+        background-size: auto, 5px, 5px, auto;
+        font-family: var(--serif);
+        line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+button, a { -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.site-header {
+    position: relative;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 210px 1fr 180px;
+    align-items: center;
+    min-height: var(--header-height);
+    padding: 0 var(--page-padding);
+    border-bottom: 1px solid rgba(121, 132, 123, 0.35);
+    background-color: rgba(6, 8, 7, 0.96);
+}
+
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.logo-container img{
+    width: 140px;
+    max-height: 38px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.icon-tray {
+    justify-self: center
+}
